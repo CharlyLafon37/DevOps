@@ -77,8 +77,12 @@
       <version>5.5.0</version>
     </dependency>
 
+    <dependency>
+      <groupId>mutation</groupId>
+      <artifactId>mut</artifactId>
+    </dependency>
   </dependencies>
-  
+
   <build>
     <plugins>
       <plugin>
@@ -104,17 +108,9 @@
         </executions>
         <configuration>
           <processors>
-            <processor>fr.inria.gforge.spoon.processors.CatchProcessor</processor>
+            <processor>mut-1.0-SNAPSHOT</processor>
           </processors>
         </configuration>
-        <!-- To be sure that you use the latest version of Spoon, specify it as dependency. -->
-        <dependencies>
-          <dependency>
-            <groupId>fr.inria.gforge.spoon</groupId>
-            <artifactId>spoon-core</artifactId>
-            <version>5.5.0</version>
-          </dependency>
-        </dependencies>
       </plugin>
     </plugins>
   </build>
