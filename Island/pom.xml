@@ -111,7 +111,9 @@
         <configuration>
           <processors>
             <processor>mutation.AtoBProcessor</processor>
+            <processor>mutation.LTToGTProcessor</processor>
           </processors>
+          <outFolder>${project.build}</outFolder>
         </configuration>
       </plugin>
     </plugins>
