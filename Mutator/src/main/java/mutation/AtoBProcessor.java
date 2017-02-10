@@ -13,6 +13,7 @@ public class AtoBProcessor extends AbstractProcessor<CtElement> {
         if(!(candidate instanceof CtBinaryOperator))
             return;
         CtBinaryOperator op = (CtBinaryOperator) candidate;
-        op.setKind(BinaryOperatorKind.MINUS);
+        if(op.getKind() == BinaryOperatorKind.LT)
+            op.setKind(BinaryOperatorKind.LE);
     }
 }
