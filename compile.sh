@@ -14,8 +14,11 @@ do
 	
 	sed -i.bak "s@<processor>.*@<processor>$process</processor>@g" $path
 	sed -i.bak "s@<outFolder>.*@<outFolder>$process</outFolder>@g" $path
+	sed -i.bak "s@<outputDirectory>.*@<outputDirectory>$process/report</outputDirectory>@g" $path
 
-	mvn compile > "log[$process].txt" 
+	mvn compile > "log[$process].txt"
+	mvn test
+	mvn surefire-report:report
 done
 
 
