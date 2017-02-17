@@ -1,0 +1,8 @@
+mutation.AtoBProcessor =)
+Rate : 46,154%
+Time : 0,17
+
+mutation.LTToGTProcessor =)
+Rate : 97,436%
+Time : 0,365
+
