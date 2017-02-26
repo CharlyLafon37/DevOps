@@ -2,14 +2,12 @@
 
 path="Island/pom.xml"
 
-processors=(
-mutation.AtoBProcessor
-mutation.LTToGTProcessor
-) 
-
+processors=($(ls ./Mutator/src/main/java/mutation | sed -e 's/\.[^.]*$//'))
 
 for process in ${processors[@]}
 do
+	process="mutation.$process"
+
 	echo "compiling processor : $process"
 	
 	sed -i.bak "s@<processor>.*@<processor>$process</processor>@g" $path
