@@ -113,7 +113,10 @@ local.properties
 .texlipse
 
 .DS_Store
-/Island/mutation.AtoBProcessor/
+/Island/mutation.MinusToPlusProcessor/
 /Island/mutation.LTToGTProcessor/
 
 log*
+/Island/mutation.EQToNEQProcessor/
+/Island/mutation.LGInverterProcessor/
+/Island/mutation.OperandInverterProcessor/
