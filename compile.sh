@@ -17,5 +17,6 @@ do
 	mvn surefire-report:report > "log[$process].txt"
 done
 
+./report.sh
 
 read -p "Appuyer sur une touche pour continuer ..."
