@@ -14,9 +14,9 @@ do
 	sed -i.bak "s@<outFolder>.*@<outFolder>$process</outFolder>@g" $path
 	sed -i.bak "s@<outputDirectory>.*@<outputDirectory>$process/report</outputDirectory>@g" $path
 
-	mvn surefire-report:report > "log[$process].txt"
+	mvn surefire-report:report 2> "log[$process].txt" > "log[$process].txt"
 done
 
-./report.sh
+echo " "
 
-read -p "Appuyer sur une touche pour continuer ..."
+./report.sh

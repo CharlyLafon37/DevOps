@@ -1,8 +1,16 @@
-mutation.AtoBProcessor =)
-Rate : 46,154%
-Time : 0,17
+mutation.EQToNEQProcessor =)
+Rate : 75,641%
+Time : 0,325
 
-mutation.LTToGTProcessor =)
-Rate : 97,436%
-Time : 0,365
+mutation.LGInverterProcessor =)
+Rate : 67,949%
+Time : 0,312
+
+mutation.MinusToPlusProcessor =)
+Rate : 85,897%
+Time : 0,328
+
+mutation.OperandInverterProcessor =)
+Rate : 55,128%
+Time : 0,299
 
