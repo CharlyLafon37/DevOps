@@ -104,7 +104,7 @@
 				<artifactId>maven-surefire-report-plugin</artifactId>
 				<version>2.12.3</version>
 				<configuration>
-					<outputDirectory>mutation.LTToGTProcessor/report</outputDirectory>
+					<outputDirectory>mutation.OperandInverterProcessor/report</outputDirectory>
 				</configuration>
 			</plugin>
 			<plugin>
@@ -112,7 +112,7 @@
 				<artifactId>maven-site-plugin</artifactId>
 				<version>2.1</version>
 				<configuration>
-					<outputDirectory>mutation.LTToGTProcessor/report</outputDirectory>
+					<outputDirectory>mutation.OperandInverterProcessor/report</outputDirectory>
 				</configuration>
 			</plugin>
 			<plugin>
@@ -129,9 +129,9 @@
 				</executions>
 				<configuration>
 					<processors>
-						<processor>mutation.LTToGTProcessor</processor>
+						<processor>mutation.OperandInverterProcessor</processor>
 					</processors>
-					<outFolder>mutation.LTToGTProcessor</outFolder>
+					<outFolder>mutation.OperandInverterProcessor</outFolder>
 				</configuration>
 			</plugin>
 		</plugins>

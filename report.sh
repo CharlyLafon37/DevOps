@@ -11,7 +11,7 @@ for process in ${processors[@]}
 do
 	process="mutation.$process"
 
-	echo $process
+	echo "reporting processor : $process"
 
 	value=`cat ./Island/$process/report/surefire-report.html`
 
@@ -24,11 +24,11 @@ do
 	value=`echo ${value#*<td>}` # Failures
 	value=`echo ${value#*<td>}` # Skipped
 
-	rate=`echo ${value%%</td>*}`
+	rate=`echo ${value%%</td>*}` # Rate
 
 	value=`echo ${value#*<td>}`
 
-	time=`echo ${value%%</td>*}`
+	time=`echo ${value%%</td>*}` # Time
 
 	echo "$process =)" >> $path
 	echo "Rate : $rate" >> $path
@@ -36,6 +36,6 @@ do
 	echo "" >> $path
 done
 
+echo " "
 
-
-read -p "Rapport cree : $path ..."
+read -p "Press a key to exit ..."
