@@ -1,16 +1,16 @@
 mutation.EQToNEQProcessor =)
 Rate : 75,641%
-Time : 0,325
+Time : 0,391
 
 mutation.LGInverterProcessor =)
 Rate : 67,949%
-Time : 0,312
+Time : 0,609
 
 mutation.MinusToPlusProcessor =)
 Rate : 85,897%
-Time : 0,328
+Time : 0,356
 
 mutation.OperandInverterProcessor =)
 Rate : 55,128%
-Time : 0,299
+Time : 0,407
 
