@@ -116,7 +116,6 @@ local.properties
 /Island/mutation.MinusToPlusProcessor/
 /Island/mutation.LTToGTProcessor/
 
-log*
 /Island/mutation.EQToNEQProcessor/
 /Island/mutation.LGInverterProcessor/
 /Island/mutation.OperandInverterProcessor/
