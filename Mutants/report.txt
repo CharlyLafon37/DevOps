@@ -1,0 +1,16 @@
+mutation.EQToNEQProcessor =)
+Rate : 75,641%
+Time : 0,265
+
+mutation.LGInverterProcessor =)
+Rate : 67,949%
+Time : 0,243
+
+mutation.MinusToPlusProcessor =)
+Rate : 85,897%
+Time : 0,246
+
+mutation.OperandInverterProcessor =)
+Rate : 55,128%
+Time : 0,263
+
