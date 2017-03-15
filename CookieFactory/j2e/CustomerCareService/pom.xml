@@ -4,7 +4,7 @@
 
     <modelVersion>4.0.0</modelVersion>
     <groupId>fr.unice.polytech.isa</groupId>
-    <artifactId>tcf-backend</artifactId>
+    <artifactId>tcf-customer-careservice</artifactId>
     <packaging>war</packaging>
     <version>1.0-SNAPSHOT</version>
     <name>ISA :: The Cookie Factory :: J2E Backend</name>
@@ -118,7 +118,7 @@
     </dependencies>
 
     <build>
-        <finalName>tcf-backend</finalName>
+        <finalName>tcf-customer-careservice</finalName>
         <defaultGoal>package</defaultGoal>
         <plugins>
             <plugin>
