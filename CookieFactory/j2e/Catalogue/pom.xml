@@ -124,7 +124,7 @@
     </dependencies>
 
     <build>
-        <finalName>tcf-backend</finalName>
+        <finalName>tcf-catalogue</finalName>
         <defaultGoal>package</defaultGoal>
         <plugins>
             <plugin>

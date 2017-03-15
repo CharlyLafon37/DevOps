@@ -1,4 +1,4 @@
-package fr.unice.polytech.isa.tcf;
+package main.java.fr.unice.polytech.isa.tcf;
 
 import fr.unice.polytech.isa.tcf.entities.Customer;
 
