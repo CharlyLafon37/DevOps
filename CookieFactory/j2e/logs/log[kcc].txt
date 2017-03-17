@@ -1,0 +1,35 @@
+67  tcf_persistence_unit  INFO   [main] openjpa.Tool - Enhancer running on type "class fr.unice.polytech.isa.tcf.entities.Order".
+209  tcf_persistence_unit  INFO   [main] openjpa.Tool - Enhancer running on type "class fr.unice.polytech.isa.tcf.entities.OrderStatus".
+215  tcf_persistence_unit  INFO   [main] openjpa.Tool - Enhancer running on type "class fr.unice.polytech.isa.tcf.entities.Customer".
+237  tcf_persistence_unit  INFO   [main] openjpa.Tool - Enhancer running on type "class fr.unice.polytech.isa.tcf.entities.Item".
+249  tcf_persistence_unit  INFO   [main] openjpa.Tool - Enhancer running on type "class fr.unice.polytech.isa.tcf.entities.OrderStatus$1".
+252  tcf_persistence_unit  INFO   [main] openjpa.Tool - Enhancer running on type "class fr.unice.polytech.isa.tcf.entities.Cookies".
+256  tcf_persistence_unit  INFO   [main] openjpa.Tool - No metadata was found for 3 classes; they have been enhanced as persistence-aware. If you intended for any of these classes to be persistence-capable, then this means[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ tcf-kcc ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\Users\Mon PC\Documents\SI4\S2\DevOps\GIT\CookieFactory\j2e\kcc\src\test\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ tcf-kcc ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ tcf-kcc ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- maven-war-plugin:2.1.1:war (default-war) @ tcf-kcc ---
+[INFO] Packaging webapp
+[INFO] Assembling webapp [tcf-kcc] in [C:\Users\Mon PC\Documents\SI4\S2\DevOps\GIT\CookieFactory\j2e\kcc\target\tcf-kcc]
+[INFO] Processing war project
+[INFO] Copying webapp resources [C:\Users\Mon PC\Documents\SI4\S2\DevOps\GIT\CookieFactory\j2e\kcc\src\main\webapp]
+[INFO] Webapp assembled in [132 msecs]
+[INFO] Building war: C:\Users\Mon PC\Documents\SI4\S2\DevOps\GIT\CookieFactory\j2e\kcc\target\tcf-kcc.war
+[WARNING] Warning: selected war files include a WEB-INF/web.xml which will be ignored 
+(webxml attribute is missing from war task, or ignoreWebxml attribute is specified as 'true')
+[INFO] Packaging classes
+[INFO] Building jar: C:\Users\Mon PC\Documents\SI4\S2\DevOps\GIT\CookieFactory\j2e\kcc\target\tcf-kcc-classes.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 6.137 s
+[INFO] Finished at: 2017-03-17T15:26:00+01:00
+[INFO] Final Memory: 45M/320M
+[INFO] ------------------------------------------------------------------------
