@@ -1,0 +1,37 @@
+74  tcf_persistence_unit  INFO   [main] openjpa.Tool - Enhancer running on type "fr.unice.polytech.isa.tcf.entities.Order".
+171  tcf_persistence_unit  INFO   [main] openjpa.Tool - Enhancer running on type "fr.unice.polytech.isa.tcf.entities.Customer".
+187  tcf_persistence_unit  INFO   [main] openjpa.Tool - Enhancer running on type "fr.unice.polytech.isa.tcf.entities.Item".
+plugin:2.5:clean (default-clean) @ tcf-catalogue ---
+[INFO] Deleting C:\Users\Mon PC\Documents\SI4\S2\DevOps\GIT\CookieFactory\j2e\Catalogue\target
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ tcf-catalogue ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\Users\Mon PC\Documents\SI4\S2\DevOps\GIT\CookieFactory\j2e\Catalogue\src\main\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ tcf-catalogue ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 2 source files to C:\Users\Mon PC\Documents\SI4\S2\DevOps\GIT\CookieFactory\j2e\Catalogue\target\classes
+[INFO] /C:/Users/Mon PC/Documents/SI4/S2/DevOps/GIT/CookieFactory/j2e/Catalogue/src/main/java/fr/unice/polytech/isa/tcf/components/CatalogueBean.java: C:\Users\Mon PC\Documents\SI4\S2\DevOps\GIT\CookieFactory\j2e\Catalogue\src\main\java\fr\unice\polytech\isa\tcf\components\CatalogueBean.java uses unchecked or unsafe operations.
+[INFO] /C:/Users/Mon PC/Documents/SI4/S2/DevOps/GIT/CookieFactory/j2e/Catalogue/src/main/java/fr/unice/polytech/isa/tcf/components/CatalogueBean.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- openjpa-maven-plugin:2.4.1:enhance (enhancer) @ tcf-catalogue ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ tcf-catalogue ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\Users\Mon PC\Documents\SI4\S2\DevOps\GIT\CookieFactory\j2e\Catalogue\src\test\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ tcf-catalogue ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ tcf-catalogue ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ tcf-catalogue ---
+[INFO] Building jar: C:\Users\Mon PC\Documents\SI4\S2\DevOps\GIT\CookieFactory\j2e\Catalogue\target\tcf-catalogue.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 5.556 s
+[INFO] Finished at: 2017-03-17T15:26:07+01:00
+[INFO] Final Memory: 44M/320M
+[INFO] ------------------------------------------------------------------------

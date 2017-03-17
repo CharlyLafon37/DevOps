@@ -1,0 +1,35 @@
+71  tcf_persistence_unit  INFO   [main] openjpa.Tool - Enhancer running on type "fr.unice.polytech.isa.tcf.entities.Order".
+165  tcf_persistence_unit  INFO   [main] openjpa.Tool - Enhancer running on type "fr.unice.polytech.isa.tcf.entities.Customer".
+175  tcf_persistence_unit  INFO   [main] openjpa.Tool - Enhancer running on type "fr.unice.polytech.isa.tcf.entities.Item".
+plugin:2.5:clean (default-clean) @ tcf-cartwebservice ---
+[INFO] Deleting C:\Users\Mon PC\Documents\SI4\S2\DevOps\GIT\CookieFactory\j2e\CartWebService\target
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ tcf-cartwebservice ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\Users\Mon PC\Documents\SI4\S2\DevOps\GIT\CookieFactory\j2e\CartWebService\src\main\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ tcf-cartwebservice ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 3 source files to C:\Users\Mon PC\Documents\SI4\S2\DevOps\GIT\CookieFactory\j2e\CartWebService\target\classes
+[INFO] 
+[INFO] --- openjpa-maven-plugin:2.4.1:enhance (enhancer) @ tcf-cartwebservice ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ tcf-cartwebservice ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\Users\Mon PC\Documents\SI4\S2\DevOps\GIT\CookieFactory\j2e\CartWebService\src\test\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ tcf-cartwebservice ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ tcf-cartwebservice ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ tcf-cartwebservice ---
+[INFO] Building jar: C:\Users\Mon PC\Documents\SI4\S2\DevOps\GIT\CookieFactory\j2e\CartWebService\target\tcf-backend.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 5.476 s
+[INFO] Finished at: 2017-03-17T15:26:22+01:00
+[INFO] Final Memory: 44M/320M
+[INFO] ------------------------------------------------------------------------

@@ -1,0 +1,35 @@
+56  tcf_persistence_unit  INFO   [main] openjpa.Tool - Enhancer running on type "fr.unice.polytech.isa.tcf.entities.Order".
+130  tcf_persistence_unit  INFO   [main] openjpa.Tool - Enhancer running on type "fr.unice.polytech.isa.tcf.entities.Customer".
+141  tcf_persistence_unit  INFO   [main] openjpa.Tool - Enhancer running on type "fr.unice.polytech.isa.tcf.entities.Item".
+plugin:2.5:clean (default-clean) @ tcf-customer-careservice ---
+[INFO] Deleting C:\Users\Mon PC\Documents\SI4\S2\DevOps\GIT\CookieFactory\j2e\CustomerCareService\target
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ tcf-customer-careservice ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\Users\Mon PC\Documents\SI4\S2\DevOps\GIT\CookieFactory\j2e\CustomerCareService\src\main\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:compile (default-compile) @ tcf-customer-careservice ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 3 source files to C:\Users\Mon PC\Documents\SI4\S2\DevOps\GIT\CookieFactory\j2e\CustomerCareService\target\classes
+[INFO] 
+[INFO] --- openjpa-maven-plugin:2.4.1:enhance (enhancer) @ tcf-customer-careservice ---
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ tcf-customer-careservice ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory C:\Users\Mon PC\Documents\SI4\S2\DevOps\GIT\CookieFactory\j2e\CustomerCareService\src\test\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.6.1:testCompile (default-testCompile) @ tcf-customer-careservice ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.19.1:test (default-test) @ tcf-customer-careservice ---
+[INFO] No tests to run.
+[INFO] 
+[INFO] --- maven-jar-plugin:2.4:jar (default-jar) @ tcf-customer-careservice ---
+[INFO] Building jar: C:\Users\Mon PC\Documents\SI4\S2\DevOps\GIT\CookieFactory\j2e\CustomerCareService\target\tcf-customer-careservice.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 5.246 s
+[INFO] Finished at: 2017-03-17T15:26:29+01:00
+[INFO] Final Memory: 44M/322M
+[INFO] ------------------------------------------------------------------------
