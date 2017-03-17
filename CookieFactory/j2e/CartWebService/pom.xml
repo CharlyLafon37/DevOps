@@ -120,6 +120,11 @@
             <version>1.0-SNAPSHOT</version>
             <classifier>classes</classifier>
         </dependency>
+        <dependency>
+            <groupId>fr.unice.polytech.isa</groupId>
+            <artifactId>tcf-customer-registry</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
 
     </dependencies>
 
