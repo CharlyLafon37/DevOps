@@ -6,9 +6,22 @@
     <groupId>fr.unice.polytech.isa</groupId>
     <artifactId>tcf-kcc</artifactId>
     <packaging>war</packaging>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0</version>
     <name>ISA :: The Cookie Factory :: J2E KCC</name>
 
+   
+     <distributionManagement>
+        <repository>
+            <id>central</id>
+            <name>220ae029b98e-releases</name>
+            <url>http://localhost:8081/artifactory/CookieFactory</url>
+        </repository>
+        <snapshotRepository>
+            <id>snapshots</id>
+            <name>220ae029b98e-snapshots</name>
+            <url>http://localhost:8081/artifactory/CookieFactory</url>
+        </snapshotRepository>
+    </distributionManagement>
     <properties>
         <!-- General Properties -->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -121,6 +134,11 @@
         <finalName>tcf-kcc</finalName>
         <defaultGoal>package</defaultGoal>
         <plugins>
+           <plugin>
+              <groupId>org.apache.maven.plugins</groupId>
+              <artifactId>maven-deploy-plugin</artifactId>
+              <version>2.7</version>
+            </plugin>
             <plugin>
                 <artifactId>maven-war-plugin</artifactId>
                 <version>2.1.1</version>
