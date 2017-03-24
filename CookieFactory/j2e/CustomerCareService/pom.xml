@@ -10,17 +10,17 @@
     <name>ISA :: The Cookie Factory :: J2E Backend</name>
 
    <distributionManagement>
-        <repository>
-            <id>central</id>
-            <name>220ae029b98e-releases</name>
-            <url>http://localhost:8081/artifactory/CookieFactory</url>
-        </repository>
-        <snapshotRepository>
-            <id>snapshots</id>
-            <name>220ae029b98e-snapshots</name>
-            <url>http://localhost:8081/artifactory/CookieFactory</url>
-        </snapshotRepository>
-    </distributionManagement>
+    <repository>
+        <id>central</id>
+        <name>0342deab59fa-releases</name>
+        <url>http://localhost:8081/artifactory/CookieFactory</url>
+    </repository>
+    <snapshotRepository>
+        <id>snapshots</id>
+        <name>0342deab59fa-snapshots</name>
+        <url>http://localhost:8081/artifactory/CookieFactory</url>
+    </snapshotRepository>
+</distributionManagement>
     <properties>
         <!-- General Properties -->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
