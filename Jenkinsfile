@@ -8,10 +8,11 @@ pipeline {
     stages {
         stage('Build'){
             steps{
-                sh 'mvn -f CookieFactory/j2e/kcc/pom.xml clean package'
-                sh 'mvn -f CookieFactory/j2e/Catalogue/pom.xml clean package'
-                sh 'mvn -f CookieFactory/j2e/CartWebService/pom.xml clean package'
-                sh 'mvn -f CookieFactory/j2e/CustomerCareService/pom.xml clean package'
+                sh 'mvn -f CookieFactory/j2e/kcc/pom.xml install'
+                sh 'mvn -f CookieFactory/j2e/CustomerRegistry/pom.xml install'
+                sh 'mvn -f CookieFactory/j2e/Catalogue/pom.xml install'
+                sh 'mvn -f CookieFactory/j2e/CartWebService/pom.xml install'
+                sh 'mvn -f CookieFactory/j2e/CustomerCareService/pom.xml install'
             }
         }
         stage('Depploy'){
