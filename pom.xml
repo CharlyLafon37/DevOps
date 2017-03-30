@@ -9,6 +9,19 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
+    <distributionManagement>
+    <repository>
+        <id>central</id>
+        <name>ff6aaa01a2a1-releases</name>
+        <url>http://51.254.117.79:8081/artifactory/DevOps_CookieFactory</url>
+    </repository>
+    <snapshotRepository>
+        <id>snapshots</id>
+        <name>ff6aaa01a2a1-snapshots</name>
+        <url>http://51.254.117.79:8081/artifactory/DevOps_CookieFactory</url>
+    </snapshotRepository>
+</distributionManagement>
+
     <modules>
         <module>CookieFactory/j2e/kcc</module>
         <module>CookieFactory/j2e/Catalogue</module>

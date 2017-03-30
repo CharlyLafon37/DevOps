@@ -12,13 +12,13 @@
    <distributionManagement>
     <repository>
         <id>central</id>
-        <name>0342deab59fa-releases</name>
-        <url>http://localhost:8081/artifactory/CookieFactory</url>
+        <name>ff6aaa01a2a1-releases</name>
+        <url>http://51.254.117.79:8081/artifactory/DevOps_CookieFactory</url>
     </repository>
     <snapshotRepository>
         <id>snapshots</id>
-        <name>0342deab59fa-snapshots</name>
-        <url>http://localhost:8081/artifactory/CookieFactory</url>
+        <name>ff6aaa01a2a1-snapshots</name>
+        <url>http://51.254.117.79:8081/artifactory/DevOps_CookieFactory</url>
     </snapshotRepository>
 </distributionManagement>
     <properties>
