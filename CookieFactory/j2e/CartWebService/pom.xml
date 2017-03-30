@@ -7,7 +7,7 @@
     <artifactId>tcf-cartwebservice</artifactId>
     <packaging>jar</packaging>
     <version>1.0-SNAPSHOT</version>
-    <name>ISA :: The Cookie Factory :: J2E Backend</name>
+    <name>ISA :: The Cookie Factory :: CartWebService</name>
 
    <distributionManagement>
     <repository>
@@ -140,7 +140,7 @@
     </dependencies>
 
     <build>
-        <finalName>tcf-backend</finalName>
+        <finalName>tcf-cartwebservice</finalName>
         <defaultGoal>package</defaultGoal>
         <plugins>
             <plugin>
