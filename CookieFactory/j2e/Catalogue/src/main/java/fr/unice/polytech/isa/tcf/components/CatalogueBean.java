@@ -14,6 +14,7 @@ public class CatalogueBean implements CatalogueExploration {
 
 	@Override
 	public Set<Cookies> listPreMadeRecipes() {
+		int i = 0;
 		Set result = new HashSet<Cookies>();
 		for(Cookies c: Cookies.values())
 			result.add(c);
