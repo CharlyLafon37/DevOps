@@ -19,6 +19,9 @@ import javax.ejb.EJB;
 public abstract class AbstractCatalogueTest {
 
 
+	@EJB
+	protected Database memory;
+
 	@Deployment
 	public static WebArchive createDeployment() {
 		// Building a Web ARchive (WAR) containing the following elements:
@@ -26,7 +29,8 @@ public abstract class AbstractCatalogueTest {
 				.addAsWebInfResource(EmptyAsset.INSTANCE, "beans.xml")
 				.addPackage(CatalogueBean.class.getPackage())
 				.addPackage(CatalogueExploration.class.getPackage())
-				;
+				.addAsManifestResource(new ClassLoaderAsset("META-INF/persistence.xml"), "persistence.xml");
+
 	}
 
 }
