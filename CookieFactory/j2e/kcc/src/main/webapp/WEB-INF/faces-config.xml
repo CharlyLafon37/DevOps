@@ -16,18 +16,5 @@
         </navigation-case>
     </navigation-rule>
 
-    <navigation-rule>
-        <from-view-id>/order.xhtml</from-view-id>
-        <navigation-case>
-            <from-outcome>ORDERED</from-outcome>
-            <to-view-id>/tracker.xhtml</to-view-id>
-            <redirect>
-                <view-param>
-                    <name>orderId</name>
-                    <value>#{orderBean.orderId}</value>
-                </view-param>
-            </redirect>
-        </navigation-case>
-    </navigation-rule>
 
 </faces-config>
