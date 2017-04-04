@@ -1,12 +1,7 @@
 package arquillian;
 
-import fr.unice.polytech.isa.tcf.CartModifier;
 import fr.unice.polytech.isa.tcf.CatalogueExploration;
-import fr.unice.polytech.isa.tcf.asynchronous.KitchenPrinter;
-import fr.unice.polytech.isa.tcf.components.CartBean;
 import fr.unice.polytech.isa.tcf.components.CatalogueBean;
-import fr.unice.polytech.isa.tcf.components.carts.CartStatefulBean;
-import fr.unice.polytech.isa.tcf.entities.Customer;
 import fr.unice.polytech.isa.tcf.utils.Database;
 import org.jboss.arquillian.container.test.api.Deployment;
 import org.jboss.shrinkwrap.api.ShrinkWrap;

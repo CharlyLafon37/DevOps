@@ -3,22 +3,14 @@ package fr.unice.polytech.isa.tcf.persistence;
 
 import arquillian.AbstractKCCTest;
 import fr.unice.polytech.isa.tcf.entities.*;
-import org.apache.openjpa.persistence.InvalidStateException;
 import org.jboss.arquillian.junit.Arquillian;
 import org.jboss.arquillian.transaction.api.annotation.TransactionMode;
 import org.jboss.arquillian.transaction.api.annotation.Transactional;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-import javax.annotation.Resource;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
-import javax.transaction.RollbackException;
-import javax.transaction.UserTransaction;
-import javax.validation.ConstraintViolationException;
-
-import java.util.HashSet;
-import java.util.Set;
 
 import static org.junit.Assert.*;
 
