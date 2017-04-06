@@ -8,7 +8,6 @@ import fr.unice.polytech.isa.tcf.components.CustomerRegistryBean;
 import fr.unice.polytech.isa.tcf.components.carts.CartStatefulBean;
 import fr.unice.polytech.isa.tcf.entities.Customer;
 import fr.unice.polytech.isa.tcf.exceptions.AlreadyExistingCustomerException;
-import fr.unice.polytech.isa.tcf.interceptors.LogParameters;
 import fr.unice.polytech.isa.tcf.managed.CustomerBean;
 import fr.unice.polytech.isa.tcf.utils.Database;
 
