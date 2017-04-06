@@ -1,4 +1,4 @@
-package fr.unice.polytech.isa.tcf.webservice;
+package fr.unice.polytech.isa.tcf.webservices;
 
 import fr.unice.polytech.isa.tcf.CartModifier;
 import fr.unice.polytech.isa.tcf.CartProcessor;
@@ -14,6 +14,8 @@ import javax.ejb.Stateless;
 import javax.jws.WebService;
 import java.util.Optional;
 import java.util.Set;
+
+
 
 @WebService(targetNamespace = "http://www.polytech.unice.fr/si/4a/isa/tcf/cart")
 @Stateless(name = "CartWS")
