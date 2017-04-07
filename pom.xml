@@ -28,6 +28,7 @@
         <module>CookieFactory/j2e/CustomerRegistry</module>
         <module>CookieFactory/j2e/CustomerCareService</module>
         <module>CookieFactory/j2e/CartWebService</module>
+        <module>CookieFactory/j2e/WebApp</module>
     </modules>
 
 </project>
