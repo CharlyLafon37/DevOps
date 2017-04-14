@@ -1,6 +1,6 @@
 FROM openjdk:8
 
-COPY ./tcf-client-1.0-SNAPSHOT.jar ./tcf-client.jar
+COPY ./tcf-client-1.0-SNAPSHOT-jar-with-dependencies.jar ./tcf-client.jar
 
 ENTRYPOINT ["java", "-jar", "./tcf-client.jar"]
 
