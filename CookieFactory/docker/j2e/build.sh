@@ -5,7 +5,7 @@ cd ../../../
 echo "Compiling the TCF system"
 mvn -q -DskipTests clean package
 echo "Done"
-cp ./CookieFactory/j2e/WebApp/target/webapp-1.0-SNAPSHOT.war ./CookieFactory/docker/j2e/.
+cp ./CookieFactory/j2e/WebApp/target/tcf-backend.war ./CookieFactory/docker/j2e/.
 
 # building the docker image
 cd ./CookieFactory/docker/j2e/

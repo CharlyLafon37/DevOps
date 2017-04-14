@@ -4,7 +4,7 @@ FROM tomee:8-jdk-7.0.1-plus
 WORKDIR /usr/local/tomee/
 
 # Loading the executable server inside the image
-COPY ./webapp-1.0-SNAPSHOT.war ./webapps/.
+COPY ./tcf-backend.war ./webapps/.
 
 # Creating the tomee/eemot user to access to the web admin console
 COPY ./resources/tomcat-user.xml ./conf/tomcat-users.xml
