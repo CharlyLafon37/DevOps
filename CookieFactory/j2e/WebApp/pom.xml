@@ -21,6 +21,28 @@
         <url>http://51.254.117.79:8081/artifactory/DevOps_CookieFactory</url>
     </snapshotRepository>
 </distributionManagement>
+
+<properties>
+        <!-- General Properties -->
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <versions.maven.compiler>3.6.1</versions.maven.compiler>
+        <versions.json>20160810</versions.json>
+        <versions.java>1.8</versions.java>
+        <!-- J2E 7.x technological stack -->
+        <versions.javaee>7.0-1</versions.javaee>
+        <versions.openejb>7.0.2</versions.openejb>
+        <versions.tomee>7.0.2</versions.tomee>
+        <versions.openjpa>2.4.1</versions.openjpa>
+        <versions.myface>2.2.10</versions.myface>
+        <!-- Testing dependencies -->
+        <versions.maven.surefire>2.19.1</versions.maven.surefire>
+        <versions.junit>4.12</versions.junit>
+        <versions.mockito>1.10.19</versions.mockito>
+        <versions.cukespace>1.6.5</versions.cukespace>
+        <versions.arquillian.junit>1.1.12.Final</versions.arquillian.junit>
+        <versions.arquilian.jta>1.0.3.Final</versions.arquilian.jta>
+        <versions.shrinkwrap>2.2.6</versions.shrinkwrap>
+    </properties>
     <dependencies>
         <dependency>
             <groupId>fr.unice.polytech.isa</groupId>
@@ -47,5 +69,82 @@
             <artifactId>tcf-customer-careservice</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
-    </dependencies>    
+    </dependencies> 
+
+    <build>
+        <finalName>tcf-backend</finalName>
+        <defaultGoal>package</defaultGoal>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.openjpa</groupId>
+                <artifactId>openjpa-maven-plugin</artifactId>
+                <version>${versions.openjpa}</version>
+                <configuration>
+                    <includes>**/entities/*.class</includes>
+                    <addDefaultConstructor>true</addDefaultConstructor>
+                    <enforcePropertyRestrictions>true</enforcePropertyRestrictions>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>enhancer</id>
+                        <phase>process-classes</phase>
+                        <goals>
+                            <goal>enhance</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>${versions.maven.surefire}</version>
+                <configuration>
+                    <forkMode>always</forkMode>
+                    <!-- otherwise openejb embedded and tomee embedded shares the same context and EJBContainer is broken -->
+                    <reuseForks>false</reuseForks>
+                    <excludes>
+                        <exclude>**/PaymentIntegrationTest.java</exclude>
+                        <exclude>features/*</exclude>
+                    </excludes>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>integration-test</id>
+                        <goals>
+                            <goal>test</goal>
+                        </goals>
+                        <phase>integration-test</phase>
+                        <configuration>
+                            <excludes>
+                                <exclude>**/*Test.java</exclude>
+                            </excludes>
+                            <includes>
+                                <include>**/PaymentIntegrationTest.java</include>
+                            </includes>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>${versions.maven.compiler}</version>
+                <configuration>
+                    <source>${versions.java}</source>
+                    <target>${versions.java}</target>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.tomee.maven</groupId>
+                <artifactId>tomee-maven-plugin</artifactId>
+                <version>${versions.tomee}</version>
+                <configuration>
+                    <!-- From TomEE to TomEE+ to support the web services stack -->
+                    <tomeeClassifier>plus</tomeeClassifier>
+                    <args>-Xmx512m -XX:PermSize=256m</args>
+                    <deployOpenEjbApplication>true</deployOpenEjbApplication>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>   
 </project>
