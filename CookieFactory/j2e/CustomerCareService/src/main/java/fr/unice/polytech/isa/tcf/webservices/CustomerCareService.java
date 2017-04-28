@@ -1,4 +1,4 @@
-package fr.unice.polytech.isa.tcf.webservice;
+package fr.unice.polytech.isa.tcf.webservices;
 
 import fr.unice.polytech.isa.tcf.entities.Cookies;
 import fr.unice.polytech.isa.tcf.entities.OrderStatus;
@@ -11,7 +11,7 @@ import javax.jws.WebResult;
 import javax.jws.WebService;
 import java.util.Set;
 
-@WebService
+@WebService(targetNamespace = "http://www.polytech.unice.fr/si/4a/isa/tcf/customer-care")
 public interface CustomerCareService {
 
 	@WebMethod

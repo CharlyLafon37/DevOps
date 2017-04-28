@@ -7,7 +7,7 @@ echo "bankHostName=$bank_host" >> ./WEB-INF/classes/bank.properties
 echo "bankPortNumber=$bank_port" >> ./WEB-INF/classes/bank.properties
 
 # step #2: update the webapp to load the right properties
-jar uvf ./webapps/webapp-1.0-SNAPSHOT.war ./WEB-INF/classes/bank.properties
+jar uvf ./webapps/tcf-backend.war ./WEB-INF/classes/bank.properties
 
 # step #3: start the TomEE engine
 catalina.sh run

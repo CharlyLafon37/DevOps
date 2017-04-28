@@ -1,4 +1,4 @@
-package fr.unice.polytech.isa.tcf.webservice;
+package fr.unice.polytech.isa.tcf.webservices;
 
 import fr.unice.polytech.isa.tcf.CatalogueExploration;
 import fr.unice.polytech.isa.tcf.CustomerRegistration;

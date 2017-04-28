@@ -29,7 +29,7 @@ services:
   client:
     image: docker-client
     container_name: tcf_client
-    command: "tcf_j2e 8080"
+    command: "tcf_system 8080"
     volumes:
       - .:/host
     depends_on:
